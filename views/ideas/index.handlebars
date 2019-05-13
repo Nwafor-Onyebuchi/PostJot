@@ -1,4 +1,5 @@
 {{#each ideas}}
+<a href="/ideas/add" class="btn btn-dark mb-2">Add Idea</a>
  <div class="card card-body mb-2">
      <h4>{{title}}</h4>
      <p>{{details}}</p>
@@ -9,5 +10,7 @@
      </form>
  </div>
 {{else}}
+<h4>Welcome, {{user.username}}</h4>
    <p>No Post Ideas listed yet</p>
+   <a href="/ideas/add" class="btn btn-success">Add Idea</a>
 {{/each}}
